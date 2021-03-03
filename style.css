@@ -31,8 +31,7 @@ header {
    color: white;
    background-color: #0C325A;
    background-image: url(img/background-header.png);
-   background-size: contain;
-   background-size: 100%, 100%;
+   background-size: cover;
 }
 
 nav {
@@ -58,9 +57,9 @@ li {
    margin-right: 30px;
 }
 
-header > input {
+header  input {
    color: white;
-   border-radius: 10px;  
+   border-radius: 5px;  
 }
 
 input.small {
@@ -69,10 +68,12 @@ input.small {
 
 input.small.transparent {
   background-color: transparent;
+  border-color: white;
 }
 
 input.green {
   background-color: #7CBB02;
+  border: none;
 }
 
 input.big.green {
@@ -91,27 +92,45 @@ div.caption {
 }
 
 .header-bot {
-   padding-top: 40px;
+   padding-top: 30px;
    width: 100%;
    height: 20%;
    text-align: center;
    background-color: lightgrey;   
 }
 
+.header-bot > h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.header-bot > p {
+   font-size: 18px;
+}
+
 p {
    color: #7C7C7C;
+
 }
 
 .main {
    width: 100%;
-   height: 350px;
 }
 
 .main-top {
    margin-left: 10%;
    margin-right: 10%;
    padding-top: 30px;
-   width: 80%; 
+   width: 80%;
+}
+
+.main-top h3 {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.main-top p {
+    font-size: 18px;
 }
 
 .main-top::after {
@@ -140,12 +159,8 @@ p {
 }
 
 .column > hr {
-   width: 15%;
+   width: 20%;
    margin: auto;
-}
-
-hr {
-   color: #7C7C7C;
 }
 
 .column > p {
@@ -157,35 +172,38 @@ hr {
    margin-right: 5%;
 }
 
+hr {
+    width: 100%;
+}
+
 .main-bot {
-   margin-top: 30px;
+   margin-top: 40px;
    margin-left: 15%;
    margin-right: 15%;
    width: 70%;
 }
 
 .main-bot > img {
-   width: 50%;
+   width: 40%;
 }
 
 .main-bot > div {
-   padding-left: 80px;
+   padding-left: 50px;
+   padding-right: 100px;
    display: inline;
    float: right;
    width: 50%;
 }
 
-.main-bot > span {
-   color: blue;
-   text-decoration: underline;
-}
 
 footer {
-   margin-top: 30px;
-   width: 100%;
-   height: 100px;
-   line-height: 100px;
-   background-color: lightgrey;
+    margin-top: 30px;
+    padding-left: 5%;
+    width: 100%;
+    height: 120px;
+    line-height: 120px;
+    background-color: lightgrey;
+    position: relative;
 }
 
 .clearfix::after {
@@ -194,26 +212,42 @@ footer {
    clear: both;
 }
 
-footer > h5 {
-   color: black;
+footer h5 {
+    font-size: 22px;
+    color: black;
+    display: inline;
+    float: left;
+}
+
+footer span {
+    color: #7C7C7C;
+    padding-right: 20px;
+}
+
+select {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #7C7C7C;
+    background-color: transparent;
+    border: none;
+}
+
+footer div {
    display: inline;
    float: left;
+   padding-left: 45%;
 }
 
-footer > div {
-   display: inline-block;
-   float: right;
-}
-
-footer > input {
+footer input {
    color: white;
    background-color: #7CBB02;
    padding: 10px;
+   border-radius: 5px;
+   border: none;
 }
 
 #fixed {
-   height: 30px;
-   width: 80px;
    position: fixed;
-   text-align: right;
+   float: right;
+   
 }
