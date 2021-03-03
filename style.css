@@ -15,7 +15,7 @@ body {
 
 header {
     width: 100%;
-    height: 500px;
+    height: 600px;
 }
 
 #logo {
@@ -91,8 +91,7 @@ div.caption {
 }
 
 .header-bot {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 40px;
     width: 100%;
     height: 20%;
     text-align: center;
@@ -101,4 +100,78 @@ div.caption {
 
 p {
     color: #7C7C7C;
+}
+
+ 
+.main {
+    width: 100%;
+    height: 350px;
+}
+
+.main-top {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 30px;
+    width: 80%;
+    
+}
+
+.main-top::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column {
+    width: 30%;
+    height: 500px;
+    float: left;
+    text-align: center;
+}
+
+.column > img {
+    height: 150;
+    width: fit-content;
+}
+
+.column > h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #7CBB02;
+    font-size: 22px;
+}
+
+.column > hr {
+    width: 15%;
+    margin: auto;
+}
+
+hr {
+    color: #7C7C7C;
+}
+
+.column > p {
+    margin-top: 20px;
+}
+
+#center {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.main-bot {
+    margin-top: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+}
+
+.main-bot > img {
+    width: 50%;
+}
+
+.main-bot > div {
+    padding-left: 80px;
+    display: inline;
+    float: right;
+    width: 50%;
 }
