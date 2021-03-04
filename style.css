@@ -14,8 +14,8 @@ body {
 }
 
 header {
-   width: 100%;
-   height: 600px;
+   width: 100vw;
+   height: 55%;
 }
 
 #logo {
@@ -45,6 +45,12 @@ ul.first {
    float: left;
 }
 
+input.transparent {
+   padding: 25px;
+   border: none;
+   background-color: transparent;
+}
+
 ul.second {
    float: right;
 }
@@ -66,7 +72,7 @@ input.small {
   padding: 10px;
 }
 
-input.small.transparent {
+input.small#transparent {
   background-color: transparent;
   border-color: white;
 }
@@ -92,7 +98,7 @@ div.caption {
 }
 
 .header-bot {
-   padding-top: 30px;
+   padding-top: 25px;
    width: 100%;
    height: 20%;
    text-align: center;
@@ -200,10 +206,9 @@ footer {
     margin-top: 30px;
     padding-left: 5%;
     width: 100%;
-    height: 120px;
-    line-height: 120px;
+    height: 130px;
+    line-height: 130px;
     background-color: lightgrey;
-    position: relative;
 }
 
 .clearfix::after {
@@ -234,11 +239,11 @@ select {
 
 footer div {
    display: inline;
-   float: left;
-   padding-left: 45%;
+   float: right;
+   padding-right: 60px;
 }
 
-footer input {
+footer div input  {
    color: white;
    background-color: #7CBB02;
    padding: 10px;
@@ -246,8 +251,20 @@ footer input {
    border: none;
 }
 
-#fixed {
+#left {
+   font-size: 24px;
+}
+
+label {
+   color: #7C7C7C;
+   text-decoration: underline;
+}
+
+.fixed {
    position: fixed;
-   float: right;
-   
+   bottom: 60px;
+   left: 90%;
+   width: 100%;
+   height: 30px;
+   background-color: transparent
 }
